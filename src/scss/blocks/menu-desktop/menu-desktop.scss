@@ -1,0 +1,20 @@
+.menu-desktop {
+    justify-content: end;
+    padding-right: 1rem;
+    
+    &__item {
+        margin-right: 2rem;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+    
+    &--hidden {
+        display: none;
+
+        @media (min-width: $screen-laptop) {
+            display: flex;
+        }
+    }
+}

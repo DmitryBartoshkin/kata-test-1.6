@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
-  </body>
+<html lang="RU">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    </head>
+    <body>
+        <header class="page-header page-header--hidden">
+            <div class="page-header__group">
+                <a href="#" class="link-icon page-header__link-icon--hamburger">
+                    <span class="link-icon__icon link-icon__icon--hamburger"></span>
+                </a>
+                <span class="vertical-line page-header__vertical-line--hidden"></span>
+                <img src="./img/logo-cps.svg" class="logo page-header__logo" alt="Логотип CPS" height="50">
+            </div>
+
+            <div class="page-header__group page-header__group--center page-header__group--hidden">
+                <a href="#" class="link-icon">
+                    <span class="link-icon__icon link-icon__icon--phone"></span>
+                </a>
+                <a href="#" class="link-icon page-header__link-icon--msg">
+                    <span class="link-icon__icon link-icon__icon--msg"></span>
+                </a>
+                <a href="#" class="link-icon page-header__link-icon--contact">
+                    <span class="link-icon__icon link-icon__icon--contact"></span>
+                </a>
+            </div>
+
+            <div class="page-header__group">
+                <span class="vertical-line"></span>
+                <a href="#" class="link-icon page-header__link-icon--repair">
+                    <span class="link-icon__icon link-icon__icon--repair"></span>
+                </a>
+                <a href="#" class="link-icon">
+                    <span class="link-icon__icon link-icon__icon--status"></span>
+                </a>     
+            </div>
+        </header>
+        <main class="page-body">
+            <h1 class="title-h1">Услуги и сервисы</h1>
+            <nav class="menu-desktop menu-desktop--hidden">
+                <a href="#" class="menu-icon-item menu-desktop__item">
+                    Оставить заявку
+                    <span class="link-icon menu-icon-item__icon"><span class="link-icon__icon link-icon__icon--repair"></span></span>
+                </a>
+                <a href="#" class="menu-icon-item menu-desktop__item">
+                    Статус ремонта
+                    <span class="link-icon menu-icon-item__icon"><span class="link-icon__icon link-icon__icon--status"></span></span>
+                </a>
+            </nav>
+            <nav class="horizontal-nav">
+                <a href="#" class="nav-item nav-item--active">Ремонтируемые устройства</a>
+                <a href="#" class="nav-item">Дополнительные услуги</a>
+                <a href="#" class="nav-item">Цены на услуги</a>
+                <a href="#" class="nav-item">Адреса сервисных центров</a>
+                <a href="#" class="nav-item">Специальные цены</a>
+                <a href="#" class="nav-item">Отзывы</a>
+            </nav>
+            <article class="main-content">
+                <div class="content main-content__content">
+                    <div class="text-content main-content__text">
+                        <p>
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        </p>
+                        <p>
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </p>
+                    </div>
+                    <a href="" class="read-more main-content__read-more">
+                        Читать далее
+                    </a>
+                </div>    
+                <div class="image-content main-content__image"><img src="./img/img-cps-label.jpg" width="100%" alt="Вывеска на стене с логотипом CPS"></div>
+            </article>
+        </main>
+        <footer>
+        </footer>
+    </body>
 </html>
