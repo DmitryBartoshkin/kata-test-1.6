@@ -1,0 +1,9 @@
+.page-body {
+    background-color: $background-color-lighted-gray;
+    width: 100%;
+    padding: 1.5rem 0;
+
+    @media (min-width: $screen-laptop) {
+        padding-top: 2.625rem;
+    }    
+}

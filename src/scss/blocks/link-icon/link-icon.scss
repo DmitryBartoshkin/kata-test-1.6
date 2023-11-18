@@ -1,0 +1,40 @@
+.link-icon {
+    width: $link-icon-background-width;
+    height: $link-icon-background-height;
+    border-radius: $border-radius-round;
+    background-color: $background-color-pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        background-repeat: no-repeat;
+        background-position: center;
+        height: $link-icon-height;
+        width: $link-icon-width;
+    }
+
+    &__icon--hamburger {
+        background-image: url('./blocks/link-icon/img/hamburger-icon.svg');
+    }
+
+    &__icon--repair {
+        background-image: url('./blocks/link-icon/img/repair-icon.svg');
+    }
+
+    &__icon--status {
+        background-image: url('./blocks/link-icon/img/status-icon.svg');
+    }
+
+    &__icon--phone {
+        background-image: url('./blocks/link-icon/img/phone-icon.svg');
+    }
+
+    &__icon--msg {
+        background-image: url('./blocks/link-icon/img/msg-icon.svg');
+    }
+
+    &__icon--contact {
+        background-image: url('./blocks/link-icon/img/contact-icon.svg');
+    }
+}
