@@ -1,0 +1,55 @@
+.main-content {
+    padding: 0 1rem;
+    padding-top: 2rem;
+    display: flex;
+
+    @media (max-width: calc(#{$screen-pad} - 1px)) {
+        flex-wrap: wrap;
+        padding-top: 1.5rem;
+    }
+
+    &__text {
+        overflow: hidden;
+
+        @media (max-width: calc(#{$screen-pad} - 1px)) {
+            max-height: 5.625rem;
+        }
+
+        @media (min-width: $screen-pad) {
+            max-height: 10rem;
+            padding-right: 3rem;
+        }
+
+        @media (min-width: $screen-laptop) {
+            max-height: 7.5rem;
+            padding-right: 2.25rem;
+        }
+    }
+
+    &__text:first-child p {
+        margin-top: 0;
+    }
+
+    &__read-more {
+        @media (max-width: calc(#{$screen-pad} - 1px)) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        @media (max-width: calc(#{$screen-pad} - 1px)) {
+            width: 110%;
+            margin: 0 -1rem;
+        }
+
+        @media (min-width: $screen-pad) {
+            width: 50%;
+        }
+    }
+
+    &__content {
+        @media (min-width: $screen-pad) {
+            width: 50%;
+        }
+    }
+}

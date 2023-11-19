@@ -1,0 +1,29 @@
+.read-more {
+    font-size: $font-size--content;
+    line-height: $line-height-content--large;
+    color: $color-content--main;
+    letter-spacing: $letter-spacing-content;
+    font-family: $font-family-content;
+    position: relative;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+        position: absolute;
+        left: 0;
+        background-image: url('./blocks/read-more/img/arrows-down.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}

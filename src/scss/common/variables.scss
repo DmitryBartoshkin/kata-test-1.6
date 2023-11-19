@@ -6,8 +6,10 @@ $font-style--normal: normal;
 $font-family-title: 'TT Lakes', 'Helvetica', sans-serif;
 $font-family-content: 'TT Lakes', 'Helvetica', sans-serif;
 
+$font-size--main: 16px;
 $font-size--h1: 1.75rem;
 $font-size--content: 1rem;
+$font-size--content-small: 0.875rem;
 
 
 $color-title: #1b1c21;
@@ -16,8 +18,12 @@ $color-content--main: #1b1c21;
 $color-nav-border: #b8ffec;
 
 $line-height-title: 2.5rem;
+$line-height-content--small: 1.15rem;
+$line-height-content: 1.3rem;
+$line-height-content--large: 1.5rem;
 
 $letter-spacing-title: -0.0375rem;
+$letter-spacing-content: -0.0375rem;
 
 $background-color-main: #fff;
 $background-color-gray--lighten: #f8f8f8;
