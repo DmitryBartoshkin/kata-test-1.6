@@ -1,0 +1,21 @@
+.menu-mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+
+    &__group {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link-icon--close {
+        margin-right: 1rem;
+
+        @media (min-width: $screen-desktop) {
+            display: none;
+        }
+    }
+}

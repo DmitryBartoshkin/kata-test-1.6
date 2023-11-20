@@ -1,0 +1,19 @@
+.links-lang {
+
+    &__link {
+        font-family: $font-family-content;
+        font-size: $font-size--main;
+        line-height: $line-height-content--large;
+        letter-spacing: $letter-spacing-content;
+        font-weight: $font-weight--normal;
+        color: $color-content--main;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 0.5rem;
+    }
+
+    &__link--active,
+    &__link:hover {
+        color: #7E7E82;
+    }
+}

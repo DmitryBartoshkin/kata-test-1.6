@@ -1,0 +1,32 @@
+.menu-mobile {
+    width: $screen-mobile;
+    min-height: $height--full-screen;
+    background-color: $background-color-main;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 16px 0px 52px 0px #0E185033;
+    z-index: 2;
+
+    @media (max-width: calc(#{$screen-mobile} + 40px)) {
+        width: 100%;
+    }
+
+    @media (min-width: $screen-desktop) {
+        box-shadow: none;
+    }
+
+    &--hidden {
+        @media (max-width: calc(#{$screen-desktop} - 1px)) {
+            display: none;
+        }
+    }
+
+    &__content {
+        min-height: $height--full-screen;
+        margin-top: -6.126rem;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,21 @@
+.menu-mobile-footer {
+    padding: 2rem 1.5rem;
+    align-self: end;
+
+    &__icons {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    &__link-icon--msg {
+        margin: auto 1rem;
+    }
+
+    &__link-mail {
+        margin-bottom: 0.75rem;
+    }
+
+    &__link-phone {
+        margin-bottom: 2.5rem;
+    }
+}

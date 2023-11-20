@@ -13,7 +13,7 @@
     &--hidden {
         display: none;
 
-        @media (min-width: $screen-laptop) {
+        @media (min-width: $screen-desktop) {
             display: flex;
         }
     }

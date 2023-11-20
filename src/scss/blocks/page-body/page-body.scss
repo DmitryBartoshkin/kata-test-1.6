@@ -2,8 +2,15 @@
     background-color: $background-color-gray--lighten;
     width: 100%;
     padding: 1.5rem 0;
+    position: relative;
 
     @media (min-width: $screen-laptop) {
         padding-top: 2.625rem;
-    }    
+        width: $screen-laptop;
+        margin: 0 auto;
+    }
+    
+    @media (min-width: $screen-desktop) {
+        margin-left: $screen-mobile;
+    }
 }

@@ -1,14 +1,27 @@
 //Commons
 @import './common/variables';
+@import './common/common';
 @import './common/fonts';
 
 //Blocks
 @import './blocks/page-header/page-header';
 @import './blocks/vertical-line/vertical-line';
 @import './blocks/link-icon/link-icon';
+@import './blocks/link-mail/link-mail';
+@import './blocks/link-phone/link-phone';
+@import './blocks/links-lang/links-lang';
 @import './blocks/page-body/page-body';
 @import './blocks/title-h1/title-h1';
 @import './blocks/horizontal-nav/horizontal-nav';
 @import './blocks/nav-item/nav-item';
 @import './blocks/menu-desktop/menu-desktop';
 @import './blocks/menu-icon-item/menu-icon-item';
+@import './blocks/main-content/main-content';
+@import './blocks/text-content/text-content';
+@import './blocks/read-more/read-more';
+@import './blocks/menu-mobile/menu-mobile';
+@import './blocks/menu-mobile-header/menu-mobile-header';
+@import './blocks/menu-mobile-nav/menu-mobile-nav';
+@import './blocks/vertical-nav/vertical-nav';
+@import './blocks/menu-mobile-footer/menu-mobile-footer';
+@import './blocks/menu-mobile-footer/menu-mobile-footer';

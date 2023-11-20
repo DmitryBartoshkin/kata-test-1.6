@@ -6,6 +6,11 @@
     justify-content: space-between;
     padding: 1rem;
 
+    @media (min-width: $screen-laptop) {
+        width: $screen-laptop;
+        margin: 0 auto;
+    }
+
     &__group {
         display: flex;
         justify-content: space-between;
@@ -49,13 +54,13 @@
     }
 
     &__link-icon--hamburger {
-        @media (min-width: $screen-pad) and (max-width: calc(#{$screen-laptop} + 1px)) {
+        @media (min-width: $screen-pad) and (max-width: $screen-desktop) {
             margin-right: 1rem;
         }
     }
     
     &--hidden {
-        @media (min-width: $screen-laptop) {
+        @media (min-width: $screen-desktop) {
             display: none;
         }
     }
