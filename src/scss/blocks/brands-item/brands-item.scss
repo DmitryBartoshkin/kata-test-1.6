@@ -1,4 +1,4 @@
-.brand {
+.brands-item {
     width: 240px;
     height: 72px;
     background-color: $background-color-main;
@@ -29,7 +29,7 @@
     &__arrow {
         width: 40px;
         height: 40px;
-        background-image: url('./blocks/brand/img/arrow.svg');
+        background-image: url('./blocks/brands-item/img/arrow.svg');
         background-position: center;
         background-repeat: no-repeat;
         margin-right: 1rem;
