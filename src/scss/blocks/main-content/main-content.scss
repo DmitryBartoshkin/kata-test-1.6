@@ -1,6 +1,5 @@
 .main-content {
-    padding: 0 1rem;
-    padding-top: 2rem;
+    padding: 2rem 1rem;
     display: flex;
 
     @media (max-width: calc(#{$screen-pad} - 1px)) {

@@ -1,0 +1,39 @@
+.swiper {
+
+    @media (max-width: calc(#{$screen-pad} - 1px)) {
+        height: 150px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 150px;
+        background: linear-gradient(90deg,$background-color-transparent, $background-color-gray--lighten 70%);
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 150px;
+        background: linear-gradient(270deg, $background-color-transparent, $background-color-gray--lighten 70%);
+        z-index: 2;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: $color-bullet-pagination;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $color-bullet-pagination--active;
+}

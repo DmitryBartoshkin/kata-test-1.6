@@ -1,0 +1,13 @@
+.slider-brands {
+
+    &__title {
+        padding: 1rem 1.5rem;
+        background: linear-gradient(90deg, $background-color-gray--lighten 0%, $background-color-main 100%);
+        margin: 0;
+    }
+
+    &__toggle {
+        margin: 1.5rem;
+        margin-top: 0.75rem;
+    }
+}
