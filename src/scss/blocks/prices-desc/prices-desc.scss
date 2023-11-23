@@ -1,0 +1,9 @@
+.prices-desc {
+    margin: 1.5rem;
+    margin-top: 0;
+    width: 421px;
+
+    @media (max-width: calc(#{$screen-pad} - 1px)) {
+        width: auto;
+    }
+}

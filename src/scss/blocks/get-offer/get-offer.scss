@@ -1,0 +1,26 @@
+.get-offer {
+    margin: 1.5rem;
+    margin-top: 0;
+
+    &__link {
+        font-family: $font-family-content;
+        font-size: $font-size--content;
+        line-height: $line-height-content--large;
+        color: $color-content--main;
+        letter-spacing: $letter-spacing-content;
+        text-decoration: none;
+        position: relative;
+        display: block;
+    }
+
+    &__link::after {
+        content: '';
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        bottom: 0;
+        background-image: url('./blocks/get-offer/img/arrow-right-offer.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

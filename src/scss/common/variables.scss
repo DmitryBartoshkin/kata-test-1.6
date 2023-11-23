@@ -10,10 +10,12 @@ $font-size--main: 16px;
 $font-size--h1: 1.75rem;
 $font-size--content: 1rem;
 $font-size--content-small: 0.875rem;
+$font-size--btn: 0.857rem;
 
 $color-title: #1b1c21;
 $color-content--light: #7e7e82;
 $color-content--main: #1b1c21;
+$color-content--btn: #fff;
 $color-nav-border: #b8ffec;
 $color-bullet-pagination: #dddddd;
 $color-bullet-pagination--active: #b5b6bc;
@@ -24,12 +26,15 @@ $line-height-content: 1.3rem;
 $line-height-content--large: 1.5rem;
 
 $letter-spacing-title: -0.0375rem;
-$letter-spacing-content: -0.0375rem;
+$letter-spacing-title--large: -0.0125rem;
+$letter-spacing-content: -0.0125rem;
+$letter-spacing-content--large: 0.0125rem;
 
 $background-color-main: #fff;
 $background-color-gray--lighten: #f8f8f8;
 $background-color-gray--light: #eaeaea;
 $background-color-link-icon: #ff3e79;
+$background-color-btn: #ff3e79;
 $background-color-title--active: #41f6d7;
 $background-color-transparent: transparent;
 
