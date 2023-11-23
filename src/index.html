@@ -107,12 +107,12 @@
         <main class="page-body">
             <h1 class="title-h1">Услуги и сервисы</h1>
             <nav class="menu-desktop menu-desktop--hidden">
-                <a href="#" class="menu-icon-item menu-desktop__item">
+                <a href="#" class="menu-icon-item menu-desktop__item menu-desktop__item--repair">
                     Оставить заявку
                     <span class="link-icon menu-icon-item__icon"><span
                             class="link-icon__icon link-icon__icon--repair"></span></span>
                 </a>
-                <a href="#" class="menu-icon-item menu-desktop__item">
+                <a href="#" class="menu-icon-item menu-desktop__item menu-desktop__item--status">
                     Статус ремонта
                     <span class="link-icon menu-icon-item__icon"><span
                             class="link-icon__icon link-icon__icon--status"></span></span>
@@ -357,6 +357,26 @@
             </div>
         </footer>
     </div>
+    <!-- feedback-modal -->
+    <div class="modal-feedback modal modal--hidden">
+        <header class="modal__header">
+            <a href="#" class="link-icon">
+                <span class="link-icon__icon link-icon__icon--close"></span>
+            </a>
+        </header>
+        <article class="modal__body">
+            <div class="title modal__title">Обратная связь</div>
+            <form action="" class="form modal__form">
+                <input class="form__input" type="text" name="name" placeholder="Имя">
+                <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+                <input class="form__input" type="email" name="email" placeholder="Электронная почта">
+                <textarea class="form__input form__input--last" name="textarea" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <p class="form__agree">Нажимая «отправить», вы даете согласие на <a class="form__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="form__link" href="#">политикой конфиденциальности</a></p>
+                <button type="submit" class="form__btn">Отправить</button>
+            </form>
+        </article>
+    </div>
+    <!-- /feedback-modal -->
 </body>
 
 </html>
