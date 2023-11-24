@@ -343,20 +343,21 @@
                     <a class="get-offer__link" href="#">Получить коммерческое предложение</a>
                 </p>
             </article>
+            <div class="page-footer">
+                <div class="page-footer__copyright text-footer">
+                    © 2019 CPS<br>
+                    Разработано командой Apesong 
+                </div>
+                <div class="page-footer__privacy text-footer">
+                    Политика конфиденциальности 
+                </div>
+                <div class="page-footer__not-offerta text-footer">
+                    Информация, размещенная на данной странице, не является публичной офертой 
+                </div>
+            </div>
         </main>
-        <footer class="page-footer">
-            <div class="page-footer__copyright text-footer">
-                © 2019 CPS<br>
-                Разработано командой Apesong 
-            </div>
-            <div class="page-footer__privacy text-footer">
-                Политика конфиденциальности 
-            </div>
-            <div class="page-footer__not-offerta text-footer">
-                Информация, размещенная на данной странице, не является публичной офертой 
-            </div>
-        </footer>
     </div>
+
     <!-- feedback-modal -->
     <div class="modal-feedback modal modal--hidden">
         <header class="modal__header">
@@ -377,6 +378,24 @@
         </article>
     </div>
     <!-- /feedback-modal -->
+
+    <!-- callback-modal -->
+    <div class="modal-callback modal modal--hidden">
+        <header class="modal__header">
+            <a href="#" class="link-icon">
+                <span class="link-icon__icon link-icon__icon--close"></span>
+            </a>
+        </header>
+        <article class="modal__body">
+            <div class="title modal__title">Заказать звонок</div>
+            <form action="" class="form modal__form">
+                <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+                <p class="form__agree">Нажимая «отправить», вы даете согласие на <a class="form__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="form__link" href="#">политикой конфиденциальности</a></p>
+                <button type="submit" class="form__btn">Отправить</button>
+            </form>
+        </article>
+    </div>
+    <!-- /callback-modal -->
 </body>
 
 </html>
