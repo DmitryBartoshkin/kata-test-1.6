@@ -11,6 +11,10 @@
     display: block;
     cursor: pointer;
 
+    &:hover {
+        color: $color-content--light;
+    }
+
     &::before {
         content: '';
         width: 1.5rem;

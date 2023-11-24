@@ -1,31 +1,31 @@
-import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
-
-let brandList = document.querySelectorAll('.brands-item');
+let swiperBrandsParent = document.querySelector('.swiper-brands').parentElement;
+let brandList = swiperBrandsParent.querySelectorAll('.brands-item');
 let brandItem = null;
+let toggleShow = swiperBrandsParent.querySelector('.toggle--show');
+let toggleHide = swiperBrandsParent.querySelector('.toggle--hide');
 
-if (window.screen.width > 1119) {
+toggleShow.addEventListener('click', function() {
     for (let i = 0; i < brandList.length; i++) {
         brandItem = brandList[i];
         
-        if (i > 7) {
-            brandItem.classList.add('brands-item--hide');
+        if (brandItem.classList.contains('brands-item--hide')) {
+            brandItem.classList.replace('brands-item--hide', 'brands-item--visible');
         }
+
     }
-} else if (window.screen.width > 767) {
+    toggleShow.hidden = true;
+    toggleHide.hidden = false;
+});
+
+toggleHide.addEventListener('click', function() {
     for (let i = 0; i < brandList.length; i++) {
         brandItem = brandList[i];
         
-        if (i > 5) {
-            brandItem.classList.add('brands-item--hide');
+        if (brandItem.classList.contains('brands-item--visible')) {
+            brandItem.classList.replace('brands-item--visible','brands-item--hide');
         }
     }
-} else {
-    const swiperBrands = new Swiper('.swiper', {
-        modules: [Pagination],
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });;
-}
+
+    toggleHide.hidden = true;
+    toggleShow.hidden = false;
+});

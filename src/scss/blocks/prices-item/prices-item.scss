@@ -53,6 +53,12 @@
         border-radius: 2rem;
         padding: 0.25rem 2.5rem 0.25rem 0.75rem;
         position: relative;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        opacity: 0.5;
+        transition: opacity 0.2s linear;
     }
 
     &__btn::after {

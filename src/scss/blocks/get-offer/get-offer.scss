@@ -14,6 +14,10 @@
         display: block;
     }
 
+    &__link:hover {
+        color: $color-content--light;
+    }
+
     &__link::after {
         content: '';
         position: absolute;

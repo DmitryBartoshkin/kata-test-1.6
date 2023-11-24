@@ -4,6 +4,11 @@ html {
 
 body {
     font-size: $font-size--main;
+
+    @media (min-width: $screen-desktop) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 *,

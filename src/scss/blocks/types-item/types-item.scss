@@ -24,6 +24,11 @@
         color: $color-content--main;
     }
 
+    &__link:hover {
+        opacity: 0.5;
+        transition: opacity linear .2s;
+    }
+
     &__text {
         margin-left: 1rem;
     }

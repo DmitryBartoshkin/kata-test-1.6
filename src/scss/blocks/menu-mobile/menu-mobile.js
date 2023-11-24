@@ -12,3 +12,14 @@ linkClose.addEventListener('click', function() {
     menuMobile.classList.add('menu-mobile--hidden');
     wrapperMain.style.opacity = 1;
 });
+
+
+wrapperMain.addEventListener('click', function(e) {
+    if( !menuMobile.contains(e.target) &&
+        !document.querySelector('.page-header__link-icon--hamburger').contains(e.target) &&
+        !menuMobile.classList.contains('menu-mobile--hidden')
+      ) {
+        menuMobile.classList.add('menu-mobile--hidden');
+        wrapperMain.style.opacity = 1;
+    }
+});

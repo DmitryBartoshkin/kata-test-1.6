@@ -45,6 +45,11 @@
         margin-bottom: 2rem;
     }
 
+    &__btn:hover {
+        opacity: 0.5;
+        transition: opacity 0.2s linear;
+    }
+
     &__btn::after {
         content: '';
         position: absolute;

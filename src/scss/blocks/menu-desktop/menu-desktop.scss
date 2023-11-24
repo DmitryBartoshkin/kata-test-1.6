@@ -6,6 +6,10 @@
         margin-right: 2rem;
     }
 
+    &__item:hover {
+        color: $color-content--light;
+    }
+
     &__item:last-child {
         margin-right: 0;
     }

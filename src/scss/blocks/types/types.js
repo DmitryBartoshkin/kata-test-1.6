@@ -1,32 +1,31 @@
-import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
-//import '../slider/slider.js'
+let swiperTypesParent = document.querySelector('.swiper-types').parentElement;
+let typesList = swiperTypesParent.querySelectorAll('.types-item');
+let typesItem = null;
+let toggleShow = swiperTypesParent.querySelector('.toggle--show');
+let toggleHide = swiperTypesParent.querySelector('.toggle--hide');
 
-let brandList = document.querySelectorAll('.types-item');
-let brandItem = null;
-
-if (window.screen.width > 1119) {
-    for (let i = 0; i < brandList.length; i++) {
-        brandItem = brandList[i];
+toggleShow.addEventListener('click', function() {
+    for (let i = 0; i < typesList.length; i++) {
+        typesItem = typesList[i];
         
-        if (i > 3) {
-            brandItem.classList.add('types-item--hide');
+        if (typesItem.classList.contains('types-item--hide')) {
+            typesItem.classList.replace('types-item--hide', 'types-item--visible');
+        }
+
+    }
+    toggleShow.hidden = true;
+    toggleHide.hidden = false;
+});
+
+toggleHide.addEventListener('click', function() {
+    for (let i = 0; i < typesList.length; i++) {
+        typesItem = typesList[i];
+        
+        if (typesItem.classList.contains('types-item--visible')) {
+            typesItem.classList.replace('types-item--visible','types-item--hide');
         }
     }
-} else if (window.screen.width > 767) {
-    for (let i = 0; i < brandList.length; i++) {
-        brandItem = brandList[i];
-        
-        if (i > 2) {
-            brandItem.classList.add('types-item--hide');
-        }
-    }
-} else {
-    const swiperTypes = new Swiper('.swiper', {
-        modules: [Pagination],
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-}
+
+    toggleHide.hidden = true;
+    toggleShow.hidden = false;
+});
