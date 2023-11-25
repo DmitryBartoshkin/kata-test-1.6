@@ -1,63 +1,63 @@
 .form {
-    &__input {
-        border: 1px solid $color-form-border;
-        border-radius: 10px;
-        color: $color-content--form;
-        padding: 0.75rem 1rem;
-        width: 100%;
-        font-family: $font-family-content;
-        letter-spacing: $letter-spacing-content;
-        margin-bottom: 1rem;
-    }
+  &__input {
+    border: 1px solid $color-form-border;
+    border-radius: 10px;
+    color: $color-content--form;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    font-family: $font-family-content;
+    letter-spacing: $letter-spacing-content;
+    margin-bottom: 1rem;
+  }
 
-    &__input--last {
-        margin-bottom: 0;
-    }
+  &__input--last {
+    margin-bottom: 0;
+  }
 
-    &__agree {
-        font-size: $font-size--content-small;
-        line-height: $line-height-content--small;
-        color: $color-content--light;
-        font-family: $font-family-content;
-    }
+  &__agree {
+    font-size: $font-size--content-small;
+    line-height: $line-height-content--small;
+    color: $color-content--light;
+    font-family: $font-family-content;
+  }
 
-    &__link {
-        font-size: $font-size--content-small;
-        line-height: $line-height-content--small;
-        color: $color-content--link;
-        font-family: $font-family-content;
-        text-decoration: none;
-    }
+  &__link {
+    font-size: $font-size--content-small;
+    line-height: $line-height-content--small;
+    color: $color-content--link;
+    font-family: $font-family-content;
+    text-decoration: none;
+  }
 
-    &__btn {
-        font-family: $font-family-content;
-        font-size: $font-size--btn;
-        text-transform: uppercase;
-        color: $color-content--btn;
-        background-color: $background-color-btn;
-        line-height: $line-height-content--large;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.25rem 2.5rem 0.25rem 0.75rem;
-        position: relative;
-        float: right;
-        cursor: pointer;
-        margin-bottom: 2rem;
-    }
+  &__btn {
+    font-family: $font-family-content;
+    font-size: $font-size--btn;
+    text-transform: uppercase;
+    color: $color-content--btn;
+    background-color: $background-color-btn;
+    line-height: $line-height-content--large;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.25rem 2.5rem 0.25rem 0.75rem;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
 
-    &__btn:hover {
-        opacity: 0.5;
-        transition: opacity 0.2s linear;
-    }
+  &__btn:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s linear;
+  }
 
-    &__btn::after {
-        content: '';
-        position: absolute;
-        width: 1.5rem;
-        height: 1.5rem;
-        right: 10px;
-        background-image: url('./blocks/form/img/arrow-right.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+  &__btn::after {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 10px;
+    background-image: url('./blocks/form/img/arrow-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

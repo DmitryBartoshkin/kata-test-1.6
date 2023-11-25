@@ -1,24 +1,24 @@
 .menu-desktop {
-    justify-content: end;
-    padding-right: 1rem;
-    
-    &__item {
-        margin-right: 2rem;
-    }
+  justify-content: end;
+  padding-right: 1rem;
 
-    &__item:hover {
-        color: $color-content--light;
-    }
+  &__item {
+    margin-right: 2rem;
+  }
 
-    &__item:last-child {
-        margin-right: 0;
-    }
-    
-    &--hidden {
-        display: none;
+  &__item:hover {
+    color: $color-content--light;
+  }
 
-        @media (min-width: $screen-desktop) {
-            display: flex;
-        }
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: $screen-desktop) {
+      display: flex;
     }
+  }
 }

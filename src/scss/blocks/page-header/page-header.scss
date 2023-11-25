@@ -1,67 +1,67 @@
 .page-header {
-    background-color: $background-color-main;
-    height: 5.5rem;
+  background-color: $background-color-main;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  @media (min-width: $screen-laptop) {
+    width: $screen-laptop;
+    margin: 0 auto;
+  }
+
+  &__group {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+  }
 
-    @media (min-width: $screen-laptop) {
-        width: $screen-laptop;
-        margin: 0 auto;
-    }
+  &__logo {
+    margin-left: 1rem;
+  }
 
-    &__group {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    &__logo {
-        margin-left: 1rem;
-    }
+  &__group--center {
+    width: 100%;
+    justify-content: right;
+  }
 
-    &__group--center {
-        width: 100%;
-        justify-content: right;
-    }
+  &__link-icon--hamburger {
+    align-self: center;
+  }
 
-    &__link-icon--hamburger {
-        align-self: center;
-    }
+  &__link-icon--msg {
+    margin: 0 1rem;
+  }
 
-    &__link-icon--msg {
-        margin: 0 1rem;
-    }
+  &__link-icon--repair {
+    margin: 0 1rem;
+  }
 
-    &__link-icon--repair {
-        margin: 0 1rem;
-    }
+  &__link-icon--contact {
+    margin-right: 1rem;
+  }
 
-    &__link-icon--contact {
-        margin-right: 1rem;
+  &__vertical-line--hidden {
+    @media (max-width: calc(#{$screen-pad} - 1px)) {
+      display: none;
     }
-    
-    &__vertical-line--hidden {
-        @media (max-width: calc(#{$screen-pad} - 1px)) {
-            display: none;
-        }
-    }
-        
-    &__group--hidden {
-        @media (max-width: calc(#{$screen-pad} - 1px)) {
-            display: none;
-        }
-    }
+  }
 
-    &__link-icon--hamburger {
-        @media (min-width: $screen-pad) and (max-width: $screen-desktop) {
-            margin-right: 1rem;
-        }
+  &__group--hidden {
+    @media (max-width: calc(#{$screen-pad} - 1px)) {
+      display: none;
     }
-    
-    &--hidden {
-        @media (min-width: $screen-desktop) {
-            display: none;
-        }
+  }
+
+  &__link-icon--hamburger {
+    @media (min-width: $screen-pad) and (max-width: $screen-desktop) {
+      margin-right: 1rem;
     }
+  }
+
+  &--hidden {
+    @media (min-width: $screen-desktop) {
+      display: none;
+    }
+  }
 }

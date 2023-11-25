@@ -1,14 +1,14 @@
 .link-phone {
-    font-family: $font-family-content;
-    font-size: $font-size--main;
-    line-height: $line-height-content--large;
-    letter-spacing: $letter-spacing-content;
-    font-weight: $font-weight--normal;
-    color: $color-content--main;
-    text-decoration: none;
-    display: block;
+  font-family: $font-family-content;
+  font-size: $font-size--main;
+  line-height: $line-height-content--large;
+  letter-spacing: $letter-spacing-content;
+  font-weight: $font-weight--normal;
+  color: $color-content--main;
+  text-decoration: none;
+  display: block;
 
-    &:hover {
-        color: $color-content--light;
-    }
+  &:hover {
+    color: $color-content--light;
+  }
 }

@@ -1,18 +1,18 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: $font-size--main;
+  font-size: $font-size--main;
 
-    @media (min-width: $screen-desktop) {
-        display: flex;
-        justify-content: center;
-    }
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }

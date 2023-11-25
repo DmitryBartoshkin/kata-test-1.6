@@ -1,50 +1,50 @@
 .types-item {
-    width: 240px;
-    height: 160px;
-    background-color: $background-color-main;
-    border: 1px solid #eaeaea;
-    border-radius: 5px;
+  width: 240px;
+  height: 160px;
+  background-color: $background-color-main;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  display: flex;
+  margin: 0.75rem;
+
+  @media (max-width: calc(#{$screen-laptop} - 1px)) {
+    width: 224px;
+  }
+
+  @media (max-width: calc(#{$screen-pad} - 1px)) {
+    width: 240px !important;
+  }
+
+  &__link {
     display: flex;
-    margin: 0.75rem;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    font-family: $font-family-content;
+    color: $color-content--main;
+  }
 
-        @media (max-width: calc(#{$screen-laptop} - 1px)) {
-            width: 224px;
-        }
+  &__link:hover {
+    opacity: 0.5;
+    transition: opacity linear 0.2s;
+  }
 
-        @media (max-width: calc(#{$screen-pad} - 1px)) {
-            width: 240px!important;
-        }
+  &__text {
+    margin-left: 1rem;
+  }
 
-    &__link {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        text-decoration: none;
-        font-family: $font-family-content;
-        color: $color-content--main;
-    }
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url('./blocks/types-item/img/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    align-self: end;
+  }
 
-    &__link:hover {
-        opacity: 0.5;
-        transition: opacity linear .2s;
-    }
-
-    &__text {
-        margin-left: 1rem;
-    }
-
-    &__arrow {
-        width: 40px;
-        height: 40px;
-        background-image: url('./blocks/types-item/img/arrow.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        align-self: end;
-    }
-
-    &--hide {
-        display: none;
-    }
+  &--hide {
+    display: none;
+  }
 }

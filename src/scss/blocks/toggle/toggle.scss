@@ -1,37 +1,37 @@
 .toggle {
-    font-family: $font-family-content;
-    font-size: $font-size--main;
-    font-weight: $font-weight--normal;
-    line-height: $line-height-content--large;
-    letter-spacing: $letter-spacing-content;
-    color: $color-content--main;
-    background-color: $background-color-transparent;
-    border: none;
-    position: relative;
-    padding-left: 1.5rem;
-    cursor: pointer;
+  font-family: $font-family-content;
+  font-size: $font-size--main;
+  font-weight: $font-weight--normal;
+  line-height: $line-height-content--large;
+  letter-spacing: $letter-spacing-content;
+  color: $color-content--main;
+  background-color: $background-color-transparent;
+  border: none;
+  position: relative;
+  padding-left: 1.5rem;
+  cursor: pointer;
 
-    @media screen and (max-width: calc(#{$screen-pad} - 1px)) {
-            display: none;
-    }
+  @media screen and (max-width: calc(#{$screen-pad} - 1px)) {
+    display: none;
+  }
 
-    &:hover {
-        color: $color-content--light;
-    }
+  &:hover {
+    color: $color-content--light;
+  }
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-image: url('./blocks/toggle/img/arrows-blue.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('./blocks/toggle/img/arrows-blue.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    &--hide::before {
-        transform: rotate(180deg);
-    }
+  &--hide::before {
+    transform: rotate(180deg);
+  }
 }

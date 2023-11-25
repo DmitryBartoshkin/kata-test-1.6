@@ -1,10 +1,10 @@
 .prices {
-    padding: 0.75rem;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  padding: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 
-    @media (max-width: calc(#{$screen-pad} - 1px)) {
-        flex-wrap: nowrap;
-    }
+  @media (max-width: calc(#{$screen-pad} - 1px)) {
+    flex-wrap: nowrap;
+  }
 }

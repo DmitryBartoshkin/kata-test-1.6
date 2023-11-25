@@ -1,34 +1,34 @@
 .vertical-nav {
-    list-style: none;
+  list-style: none;
 
-    &__item {
-        padding: 1rem 1.5rem;
-    }
+  &__item {
+    padding: 1rem 1.5rem;
+  }
 
-    &__link {
-        font-family: $font-family-content;
-        font-size: $font-size--main;
-        line-height: $line-height-content--large;
-        letter-spacing: $letter-spacing-content;
-        font-weight: $font-weight--normal;
-        color: $color-content--main;
-        text-decoration: none;
-        position: relative;
-    }
+  &__link {
+    font-family: $font-family-content;
+    font-size: $font-size--main;
+    line-height: $line-height-content--large;
+    letter-spacing: $letter-spacing-content;
+    font-weight: $font-weight--normal;
+    color: $color-content--main;
+    text-decoration: none;
+    position: relative;
+  }
 
-    &__link:hover,
-    &__link--active {
-        color: $color-content--light;
-    }
+  &__link:hover,
+  &__link--active {
+    color: $color-content--light;
+  }
 
-    &__link--active::before,
-    &__link:hover::before {
-        content: ' ';
-        width: 4px;
-        height: 32px;
-        position: absolute;
-        left: -1.5rem;
-        top: -0.3rem;
-        background-color: $background-color-title--active;
-    }
+  &__link--active::before,
+  &__link:hover::before {
+    content: ' ';
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    left: -1.5rem;
+    top: -0.3rem;
+    background-color: $background-color-title--active;
+  }
 }

@@ -1,15 +1,15 @@
 .text-content {
-    font-size: $font-size--content-small;
-    line-height: $line-height-content--small;
-    color: $color-content--main;
-    letter-spacing: $letter-spacing-content--large;
-    font-family: $font-family-content;
+  font-size: $font-size--content-small;
+  line-height: $line-height-content--small;
+  color: $color-content--main;
+  letter-spacing: $letter-spacing-content--large;
+  font-family: $font-family-content;
 
-    @media (min-width: $screen-pad){
-        line-height: $line-height-content;
-    }
+  @media (min-width: $screen-pad) {
+    line-height: $line-height-content;
+  }
 
-    &--show-full {
-        max-height: none;
-    }
+  &--show-full {
+    max-height: none;
+  }
 }

@@ -1,21 +1,21 @@
 .nav-item {
-    font-family: $font-family-content;
-    font-size: $font-size--content;
-    font-weight: $font-weight--normal;
-    color: $color-content--light;
-    flex-shrink: 0;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 5px;
+  font-family: $font-family-content;
+  font-size: $font-size--content;
+  font-weight: $font-weight--normal;
+  color: $color-content--light;
+  flex-shrink: 0;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
 
-    &:hover {
-        background-color: $background-color-main;
-        border: 2px solid $color-nav-border;
-    }
+  &:hover {
+    background-color: $background-color-main;
+    border: 2px solid $color-nav-border;
+  }
 
-    &--active {
-        background-color: $background-color-main;
-        border: 2px solid $color-nav-border;
-    }
+  &--active {
+    background-color: $background-color-main;
+    border: 2px solid $color-nav-border;
+  }
 }
